@@ -86,9 +86,9 @@ resource "aws_api_gateway_stage" "my_api_stage" {
 #}
 
 # Create a Lambda Permission for API Gateway
-resource "aws_lambda_permission" "api_gateway_permission" {
-  statement_id  = "AllowAPIGatewayInvoke"
-  action        = "lambda:InvokeFunction"
-  function_name = "arn:aws:lambda:ap-south-1:291548415763:function:DynamoDBReaderLambda" // change arm lambda
-  principal     = "apigateway.amazonaws.com"
-}
+#resource "aws_lambda_permission" "api_gateway_permission" {
+#  statement_id  = "AllowAPIGatewayInvoke"
+#  action        = "lambda:InvokeFunction"
+#  function_name = "arn:aws:lambda:ap-south-1:291548415763:function:DynamoDBReaderLambda" // change arm lambda
+#  principal     = "apigateway.amazonaws.com"
+#}
